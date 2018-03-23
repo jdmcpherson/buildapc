@@ -1,0 +1,20 @@
+{
+  "name": "buildapc",
+  "version": "0.1.0",
+  "description": "A site to build your PC!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "James McPherson",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.1"
+  }
+}

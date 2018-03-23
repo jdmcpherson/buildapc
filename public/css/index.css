@@ -1,0 +1,40 @@
+ul.navbar-nav > * {
+   margin-right: 10px
+}
+
+.display-4 {
+   color: #ffffff;
+   font-weight: bold;
+}
+
+.lead {
+   color: #ffffff
+}
+
+.overlap {
+   position: absolute;
+   top: -30%;
+   left: 0;
+}
+
+div.header {
+   background-color: black;
+}
+
+div.header > div.container {
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+h1.header-text {
+   color: white;
+}
+
+.table {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.sidebar {
+   background-color: bisque;
+}
