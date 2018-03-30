@@ -28,6 +28,10 @@ app.get('/submitted', function (req, res) {
    res.render('submitted');
 });
 
+app.get('/login', function (req, res) {
+   res.render('login');
+});
+
 const DOMAIN = 'localhost';
 const PORT = '8080';
 app.listen(PORT, DOMAIN, () => {
