@@ -2,9 +2,17 @@
   "name": "buildapc",
   "version": "0.1.0",
   "description": "A site to build your PC!",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "db:create": "createdb --echo buildapc_dev",
+    "db:drop": "dropdb --echo --if-exists buildapc_dev",
+    "db:migrate": "knex migrate:latest",
+    "db:reset": "npm run db:drop && npm run db:create && npm run db:migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdmcpherson/buildapc"
   },
   "author": "James McPherson",
   "license": "MIT",
@@ -12,9 +20,12 @@
     "nodemon": "^1.17.2"
   },
   "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.5.7",
     "express": "^4.16.3",
-    "knex": "^0.14.4",
+    "knex": "^0.14.6",
     "morgan": "^1.9.0",
     "pg": "^7.4.1"
   }
