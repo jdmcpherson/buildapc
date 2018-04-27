@@ -17,20 +17,16 @@ app.get('/', function (req, res) {
    res.render('index');
 });
 
+app.get('/blog', function (req, res) {
+   res.render('blog');
+});
+
 app.get('/build', function (req, res) {
    res.render('build');
 });
 
 app.get('/products', function (req, res) {
    res.render('products');
-});
-
-app.get('/guides', function (req, res) {
-   res.render('guides');
-});
-
-app.get('/submitted', function (req, res) {
-   res.render('submitted');
 });
 
 app.get('/login', function (req, res) {

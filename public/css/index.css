@@ -38,3 +38,8 @@ h1.header-text {
 .sidebar {
    background-color: bisque;
 }
+
+ul.footer-list > li {
+   font-size: 10px;
+   padding: 5px;
+}
