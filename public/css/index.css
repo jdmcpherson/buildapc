@@ -17,6 +17,15 @@ ul.navbar-nav > * {
    left: 0;
 }
 
+#homeheader {
+   background-image: url("../images/dreamhack-night-shot.jpg");
+}
+
+#headercont {
+   background-color: rgba(0, 0, 0, 0.75);
+   padding: 50px 25px 50px 25px;
+}
+
 div.header {
    background-color: black;
 }
@@ -37,6 +46,11 @@ h1.header-text {
 
 .sidebar {
    background-color: bisque;
+}
+
+.logincard {
+   margin-top: 25px;
+   margin-bottom: 25px; 
 }
 
 ul.footer-list > li {

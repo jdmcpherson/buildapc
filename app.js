@@ -17,10 +17,6 @@ app.get('/', function (req, res) {
    res.render('index');
 });
 
-app.get('/blog', function (req, res) {
-   res.render('blog');
-});
-
 app.get('/build', function (req, res) {
    res.render('build');
 });
@@ -31,6 +27,10 @@ app.get('/products', function (req, res) {
 
 app.get('/login', function (req, res) {
    res.render('login');
+});
+
+app.get('/signup', function (req, res) {
+   res.render('signup');
 });
 
 const COOKIE_MAX_AGE = 1000 * 60 * 60 * 24 * 7;
