@@ -9,6 +9,7 @@ app.use(logger('dev'));
 app.set('view engine', 'ejs');
 
 app.use(cookieParser());
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')))
@@ -41,8 +42,11 @@ app.post("/login", (request, response) => {
    response.redirect("/");
 });
 
+const users = require('./controllers/users')
+app.use('/users', users)
+
 const DOMAIN = 'localhost';
 const PORT = '8080';
 app.listen(PORT, DOMAIN, () => {
-   console.log(`🖥 Server listenning on http://${DOMAIN}:${PORT}`);
+   console.log(`> Server listenning on http://${DOMAIN}:${PORT}`);
 });
